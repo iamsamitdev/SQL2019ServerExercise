@@ -1,0 +1,11 @@
+USE Orders
+
+DELETE TblOrders
+WHERE OrderID=11069
+
+GO
+
+SELECT * FROM TblOrders
+ORDER BY OrderID DESC
+
+GO

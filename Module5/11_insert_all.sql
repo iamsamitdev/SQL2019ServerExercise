@@ -1,0 +1,11 @@
+USE Orders
+
+INSERT INTO TblOrders
+VALUES (11069,259, '11/11/2021', '11/14/2021')
+
+GO
+
+SELECT * FROM TblOrders
+ORDER BY OrderID DESC
+
+GO

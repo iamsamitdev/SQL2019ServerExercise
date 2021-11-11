@@ -1,0 +1,5 @@
+USE Orders
+
+SELECT DISTINCT OrderID
+FROM TblOrders
+GO
