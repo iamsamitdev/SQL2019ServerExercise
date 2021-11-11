@@ -1,6 +1,6 @@
 USE Orders
 
--- °“√„™È§” —Ëß SELF JOIN
+-- ‡∏Å‡∏≤‡∏£‡πÉ‡∏ä‡πâ‡∏Ñ‡∏≥‡∏™‡∏±‡πà‡∏á SELF JOIN
 SELECT DISTINCT TblCustomers.CustomerName, OtherCus.CustomerName, TblCustomers.Zipcode
 FROM	TblCustomers INNER JOIN TblCustomers OtherCus 
 ON	TblCustomers.Zipcode = OtherCus.Zipcode AND

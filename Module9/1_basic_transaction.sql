@@ -1,4 +1,4 @@
-﻿USE Orders
+USE Orders
 GO
 
 CREATE PROCEDURE Test_Transaction @cnt int=NULL AS

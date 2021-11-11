@@ -1,7 +1,7 @@
 USE Orders
 GO
 
--- ���ҧ Views
+-- สร้าง Views
 CREATE VIEW ProductCountTop5
 AS
 SELECT TOP 5 TP.ProductName, TOD.ProductCount
@@ -11,7 +11,7 @@ ORDER BY TOD.ProductCount DESC
 
 GO
 
--- ��ҹ�����Ũҡ View ProductCountTop5
+-- อ่านข้อมูลจาก View ProductCountTop5
 SELECT * FROM  ProductCountTop5
 
 GO

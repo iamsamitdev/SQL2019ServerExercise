@@ -1,4 +1,4 @@
-﻿Use Orders
+Use Orders
 GO
 
 -- การสร้าง Store Procedure

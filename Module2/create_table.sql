@@ -1,7 +1,7 @@
 USE stock
 GO
 
--- ���ҧ���ҧ����
+-- สร้างตารางใหม่
 CREATE TABLE categories
 (
 	CategoryID int NOT NULL PRIMARY KEY IDENTITY(1,1),
@@ -10,5 +10,5 @@ CREATE TABLE categories
 	CategoryPicture image NULL
 ) ON [PRIMARY]
 
--- ź���ҧ㹰ҹ������
+-- ลบตารางในฐานข้อมูล
 DROP TABLE categories

@@ -1,15 +1,15 @@
 USE Orders
 GO
 
--- °“√ √È“ß Store Procedure
+-- ‡∏Å‡∏≤‡∏£‡∏™‡∏£‡πâ‡∏≤‡∏á Store Procedure
 CREATE PROCEDURE Get_Products_By_Category
 	@CategoryID int
 AS
 BEGIN
-	SELECT * FROM TblProducts /* ®–§‘«√’¢ÈÕ¡Ÿ≈®“°µ“√“ß TblProducts */
-	WHERE CategoryID=@CategoryID /* µ“¡™π‘¥ ‘π§È“ ∑’Ë Ëß¡“‡ªÁπæ“√“¡‘‡µÕ√Ï */
+	SELECT * FROM TblProducts /* ‡∏à‡∏∞‡∏Ñ‡∏¥‡∏ß‡∏£‡∏µ‡∏Ç‡πâ‡∏≠‡∏°‡∏π‡∏•‡∏à‡∏≤‡∏Å‡∏ï‡∏≤‡∏£‡∏≤‡∏á TblProducts */
+	WHERE CategoryID=@CategoryID /* ‡∏ï‡∏≤‡∏°‡∏ä‡∏ô‡∏¥‡∏î‡∏™‡∏¥‡∏ô‡∏Ñ‡πâ‡∏≤ ‡∏ó‡∏µ‡πà‡∏™‡πà‡∏á‡∏°‡∏≤‡πÄ‡∏õ‡πá‡∏ô‡∏û‡∏≤‡∏£‡∏≤‡∏°‡∏¥‡πÄ‡∏ï‡∏≠‡∏£‡πå */
 	RETURN
 END
 
--- ∑¥ Õ∫‡√’¬°„™Èß“π Get_Products_By_Category
+-- ‡∏ó‡∏î‡∏™‡∏≠‡∏ö‡πÄ‡∏£‡∏µ‡∏¢‡∏Å‡πÉ‡∏ä‡πâ‡∏á‡∏≤‡∏ô Get_Products_By_Category
 EXEC Get_Products_By_Category 3

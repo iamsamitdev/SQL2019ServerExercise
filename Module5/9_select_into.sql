@@ -1,15 +1,15 @@
 USE Orders
 
-IF OBJECT_ID('New_Table') IS NOT NULL /* เช็คว่ามีชื่อ table New_Table หรือไม่ */
-DROP TABLE New_Table /* สั่งลบ New_Table ออก */
+IF OBJECT_ID('New_Table') IS NOT NULL /* เน€เธเนเธเธงเนเธฒเธกเธตเธเธทเนเธญ table New_Table เธซเธฃเธทเธญเนเธกเน */
+DROP TABLE New_Table /* เธชเธฑเนเธเธฅเธ New_Table เธญเธญเธ */
 
--- Select และสร้าง Table ใหม่
+-- Select เนเธฅเธฐเธชเธฃเนเธฒเธ Table เนเธซเธกเน
 SELECT OrderID, SUM(ProductCount) AS 'Sum of ProductCount'
-INTO New_Table /* สร้างตารางใหม่ชื่อ New_Table */
+INTO New_Table /* เธชเธฃเนเธฒเธเธ•เธฒเธฃเธฒเธเนเธซเธกเนเธเธทเนเธญ New_Table */
 FROM TblOrderDetails
 GROUP BY OrderID
 GO
 
--- ทดสอบเรียกดูข้อมูลจาก Table New_Table
+-- เธ—เธ”เธชเธญเธเน€เธฃเธตเธขเธเธ”เธนเธเนเธญเธกเธนเธฅเธเธฒเธ Table New_Table
 SELECT * FROM New_Table
 GO

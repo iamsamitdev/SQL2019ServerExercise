@@ -1,5 +1,5 @@
 USE Orders
 
-SELECT OrderID AS ÃËÑÊãºÊÑè§«×éÍÊÔ¹¤éÒ, ProductCount AS "Sum Of Product"
+SELECT OrderID AS à¸£à¸«à¸±à¸ªà¹ƒà¸šà¸ªà¸±à¹ˆà¸‡à¸‹à¸·à¹‰à¸­à¸ªà¸´à¸™à¸„à¹‰à¸², ProductCount AS "Sum Of Product"
 FROM TblOrderDetails
 GO

@@ -1,7 +1,7 @@
 USE Orders
 GO
 
--- ������ҧ�ѧ��ѹ����
+-- การสร้างฟังก์ชันใหม่
 CREATE FUNCTION PriceIncludingTAX(@Price money, @VATFlag bit)
 RETURNS money
 AS BEGIN
@@ -15,7 +15,7 @@ END
 
 GO
 
--- ���¡��ҹ�ѧ��ѹ
+-- เรียกใช้งานฟังก์ชัน
 SELECT ProductName, UnitPrice, VATFlag, dbo.PriceIncludingTAX(UnitPrice, VATFlag) AS TotalPrice
 FROM TblProducts
 WHERE VATFlag = 1

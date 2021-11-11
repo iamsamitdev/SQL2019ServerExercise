@@ -1,13 +1,13 @@
 USE Orders
 
 -- Sum
-SELECT SUM (ProductCount) AS �ӹǹ��鹢ͧ�Թ��ҷ�����
+SELECT SUM (ProductCount) AS จำนวนชิ้นของสินค้าทั้งหมด
 FROM TblOrderDetails
 WHERE OrderID = 10278
 GO
 
 -- Group By
-SELECT OrderID, SUM (ProductCount) AS �ӹǹ�Թ���
+SELECT OrderID, SUM (ProductCount) AS จำนวนสินค้า
 FROM TblOrderDetails
 GROUP BY OrderID
 GO

@@ -1,11 +1,11 @@
 USE Orders
 
--- ≈Õß‡√’¬°¥Ÿ¢ÈÕ¡Ÿ≈„πµ“√“ß TblProducts
+-- ‡∏•‡∏≠‡∏á‡πÄ‡∏£‡∏µ‡∏¢‡∏Å‡∏î‡∏π‡∏Ç‡πâ‡∏≠‡∏°‡∏π‡∏•‡πÉ‡∏ô‡∏ï‡∏≤‡∏£‡∏≤‡∏á TblProducts
 SELECT * FROM TblProducts
 ORDER BY ProductID
 GO
 
--- °“√„™È§” —Ëß LEFT JOIN
+-- ‡∏Å‡∏≤‡∏£‡πÉ‡∏ä‡πâ‡∏Ñ‡∏≥‡∏™‡∏±‡πà‡∏á LEFT JOIN
 SELECT TblProducts.*, TblOrderDetails.ProductCount
 FROM TblProducts LEFT OUTER JOIN TblOrderDetails
 ON TblProducts.ProductID = TblOrderDetails.ProductID

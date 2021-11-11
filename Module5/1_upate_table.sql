@@ -1,6 +1,6 @@
 USE Orders
 
--- ����Ѿഷ������㹵��ҧ TblProducts
+-- การอัพเดทข้อมูลในตาราง TblProducts
 UPDATE TblProducts
 SET VATFlag = 0
 FROM TblProducts TP INNER JOIN TblOrderDetails TOD
@@ -8,7 +8,7 @@ ON TP.ProductID = TOD.ProductID
 
 GO
 
--- ���ͺ���¡�٢�����㹵��ҧ���١�Ѿഷ
+-- ทดสอบเรียกดูข้อมูลในตารางที่ถูกอัพเดท
 SELECT * FROM TblProducts
 ORDER BY ProductID DESC
 
